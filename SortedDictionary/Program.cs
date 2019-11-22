@@ -22,6 +22,7 @@ namespace SortedDictionary
             tree.Insert("A", "Apple");
             tree.Insert("B", "Ball");
             tree.Insert("C", "Dimple");
+
             tree.Insert("D", "Capple");
             Console.WriteLine("before Deletion of Apple " + "the number of item is "+ tree.Count);
             //this is looking good

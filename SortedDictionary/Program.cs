@@ -21,13 +21,22 @@ namespace SortedDictionary
             // do traversal later; call get with it
             tree.Insert("A", "Apple");
             tree.Insert("B", "Ball");
-            tree.Insert("D", "Dimple");
-            tree.Insert("C", "Capple");
+            tree.Insert("C", "Dimple");
+            tree.Insert("D", "Capple");
+            Console.WriteLine("before Deletion of Apple " + "the number of item is "+ tree.Count);
             //this is looking good
-
-
-           // Console.WriteLine( tree.Get("D"));
-            tree.Inorder();
+            //tree.Delete("B");
+            //tree.Delete("C");
+            //tree.Delete("A");
+         //   Console.WriteLine("after Deletion of Apple " + "the number of item is " + tree.Count);
+            // Console.WriteLine( tree.Get("D"));
+           // tree.clear();
+            Console.WriteLine(tree.ContainsKey("A"));
+            Console.WriteLine(tree.ContainsValue("Ball"));
+            Console.WriteLine(tree.ContainsValue("hhfhghf") + "  Answer should be false");
+            Console.WriteLine(tree["D"]);
+            //Console.WriteLine(tree.Get("s"));
+        //     tree.Inorder();
             //Console.WriteLine( tree.Count);
 
         }
